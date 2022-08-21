@@ -106,10 +106,14 @@ const Top = styled.div`
 `;
 
 const CardHold = styled.div`
-  width: 80%;
+  width: 72%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const BirthDayHold = styled.div`
@@ -175,12 +179,17 @@ const EmailHold = styled.div`
   @media (max-width: 430px) {
     margin: 0;
     margin-top: 15px;
+    width: 100%;
   }
 `;
 
 const Username = styled.div`
   font-weight: 500;
   font-size: 18px;
+
+  @media (max-width: 430px) {
+    width: 100%;
+  }
 `;
 
 const LastName = styled.div`
@@ -206,7 +215,7 @@ const Name = styled.div`
 
 const Card = styled.div`
   height: 300px;
-  width: 35%;
+  width: 400px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   display: flex;
@@ -214,11 +223,12 @@ const Card = styled.div`
   align-items: center;
   background-color: #272b33;
   color: white;
-  margin-right: 15px;
   margin-bottom: 15px;
+  padding-right: 10px;
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-right: 0px;
   }
 
   @media (max-width: 500px) {
